@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Ayman Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p1B1vbd1P+M9MZhGq+F27ZDx7G/63J7rI5b8J2+9oXv1FV1I9X0H8LwA3jV2/0v5bQKni2ZQF6uX/kZ8vTU5Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+<nav>
+  <div>Mohamed Ayman</div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#exceperience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header>
+  <h1>Mohamed Ayman</h1>
+  <p>Flutter Developer</p>
+
+  <!-- صورة شخصية -->
+  <img src="images/mo.jpeg" alt="Mohamed Ayman" class="profile-img">
+
+  <!-- الأزرار -->
+  <div class="header-buttons">
+    <button onclick="scrollToProjects()">Explore Work</button>
+    <button onclick="window.open('pdf/Mohamed-Ayman-FlowCV-Resume-.pdf', '_blank')">Get Resume</button>
+  </div>
+</header>
+
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I’m Mohamed Ayman, a Flutter developer passionate about building high-performance, scalable mobile applications. 
+Specialized in Flutter development with expertise in state management (Provider, Bloc), API integration, and responsive UI/UX design. 
+Delivered 5 complete projects with clean, maintainable code and optimized performance across Android and iOS platforms.
+
+Experienced in debugging, testing, and implementing efficient architectures for complex apps. 
+Skilled in problem-solving, logical thinking, and writing reusable components for faster development cycles. 
+Committed to continuous learning of new technologies and improving application quality. 
+
+Let’s collaborate to create innovative, reliable, and user-friendly applications.
+</p>
+</section>
+
+<section id="education">
+  <h2> Education</h2>
+  <p>Bachelor’s Degree in Computer and Communications, Misr Academy for Engineering and Technology – 2025. Relevant academic courses include Mobile App Development (Tsquare & NTI), C & C++ Programming, Data Structures, and Computer Networks.
+
+</p>
+</section>
+
+<section id="experiences">
+  <h2>Experiences</h2>
+
+  <div class="experience-container">
+
+    <!-- Experience 1 -->
+    <div class="experience-card">
+      <div class="experience-info">
+        <h3>Flutter Developer</h3>
+        <p class="location">Tsquare</p>
+        <p class="experience-date">Aug 2024 – Jan 2025</p>
+      </div>
+      <ul class="experience-details">
+        <li>Learned Flutter development and state management (Provider & Bloc)</li>
+        <li>Built responsive UI/UX designs for mobile apps</li>
+        <li>Used VSCode, Flutter SDK, and Firebase for development</li>
+        <li>Collaborated on small projects to implement clean and maintainable code</li>
+      </ul>
+    </div>
+
+    <!-- Experience 2 -->
+    <div class="experience-card">
+      <div class="experience-info">
+        <h3>Flutter Developer</h3>
+        <p class="location">NTI (DEY)</p>
+        <p class="experience-date">Nov 2025 – Jan 2026</p>
+      </div>
+      <ul class="experience-details">
+        <li>Learned Flutter development and state management (Provider & Bloc)</li>
+        <li>Built responsive UI/UX designs for mobile apps</li>
+        <li>Developed 4 complete mobile app projects from scratch</li>
+        <li>Used VSCode, Flutter SDK, and Firebase for development</li>
+        <li>Collaborated on projects to implement clean and maintainable code</li>
+        <li>Practiced debugging, testing, and optimization for performance</li>
+      </ul>
+    </div>
+
+    <!-- Experience 3 -->
+    <div class="experience-card">
+      <div class="experience-info">
+        <h3>Video Editing</h3>
+        <p class="location">IEEE MET</p>
+        <p class="experience-date">Feb 2025 – Present</p>
+      </div>
+      <ul class="experience-details">
+        <li>Produced multiple professional videos for IEEE MET team projects</li>
+        <li>Edited videos using Adobe Premiere Pro & After Effects</li>
+        <li>Added motion graphics and transitions</li>
+        <li>Managed video projects from concept to final export</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <!-- مشروع 1: Luxe E-commerce App -->
+    <div class="project-card">
+      <a href="https://github.com/moayman-2002/graduation_project" target="_blank">
+        <img src="images/luxe.png" alt="Luxe E-commerce App Screenshot" class="project-img">
+      </a>
+      <h3>Luxe E-commerce App</h3>
+      <p>Modern e-commerce mobile app with full shopping experience, clean architecture, and responsive design.</p>
+
+      <!-- Tools المستخدمه -->
+      <div class="project-tools">
+        <span>Flutter</span>
+        <span>Dart</span>
+        <span>API</span>
+        <span>MVVM</span>
+        <span>Dio</span>
+        <span>Clean Architecture</span>
+        <span>Search & Filters</span>
+        <span>Provider</span>
+        <span>Authentication</span>
+        <span>Git & GitHub</span>
+        <span>State Management (Cubit)</span>
+        <span>VSCode</span>
+        <span>Android/iOS Simulators</span>
+      </div>
+    </div>
+
+    <!-- مشروع 2: Course App -->
+    <div class="project-card">
+      <a href="https://github.com/moayman-2002/courses_app2.git" target="_blank">
+        <img src="images/course.png" alt="Course App Screenshot" class="project-img">
+      </a>
+      <h3>Course App</h3>
+      <p>Mobile app to browse and enroll in courses with interactive UI, video lessons, and user-friendly navigation.</p>
+
+      <!-- Tools المستخدمه -->
+      <div class="project-tools">
+        <span>Flutter</span>
+        <span>Dart</span>
+        <span>API</span>
+        <span>MVVM</span>
+        <span>Dio</span>
+        <span>Clean Architecture</span>
+        <span>Search & Filters</span>
+        <span>Authentication</span>
+        <span>Android Studio</span>
+        <span>Android/iOS Simulators</span>
+      </div>
+    </div>
+
+    <!-- مشروع 3: BMI Calculator -->
+    <div class="project-card">
+      <a href="https://github.com/moayman-2002/BMI_Calculate.git" target="_blank">
+        <img src="images/bmi.png" alt="BMI Calculator Screenshot" class="project-img">
+      </a>
+      <h3>BMI Calculator</h3>
+      <p>Mobile app to instantly calculate Body Mass Index (BMI) with gender, height, and weight inputs.</p>
+
+      <!-- Tools المستخدمه -->
+      <div class="project-tools">
+        <span>Flutter</span>
+        <span>Dart</span>
+        <span>VSCode</span>
+        <span>Android/iOS Simulators</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">Flutter</div>
+    <div class="skill">Dart</div>
+    <div class="skill">State Management</div>
+    <div class="skill">API Integration</div>
+    <div class="skill">Firebase</div>
+    <div class="skill">Version Control (Git & GitHub)</div>
+    <div class="skill">Problem-solving</div>
+    <div class="skill">Time Management </div>
+    <div class="skill">Authentication </div>
+    <div class="skill">MVVM</div>
+    <div class="skill">Dio</div>
+    <div class="skill">Navigation&Routing</div>
+    <div class="skill">SQL</div>
+    <div class="skill">Testing</div>
+    <div class="skill">Vs code</div>
+    <div class="skill">Android Studio</div>
+  </div>
+</section>
+
+
+<section id="key-service">
+  <h2>Key Services</h2>
+  <div class="services-container">
+
+    <!-- Service 1 -->
+    <div class="service-card">
+      <div class="service-icon">📱</div>
+      <h3>Mobile App Development</h3>
+      <p>Build cross-platform Android & iOS apps with responsive UI and clean code architecture.</p>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="service-card">
+      <div class="service-icon">⚙️</div>
+      <h3>API & State Management</h3>
+      <p>Manage app state efficiently and integrate APIs for dynamic data handling across mobile apps. Use Provider, Bloc, and Riverpod.</p>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="service-card">
+      <div class="service-icon">🎨</div>
+      <h3>UI/UX Design</h3>
+      <p>Design visually appealing and intuitive mobile interfaces with smooth animations and interactive elements for enhanced user experience.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <div class="contact-cards">
+
+    <a href="https://github.com/moayman-2002" target="_blank" class="contact-card">
+      <div class="contact-icon.github">🐱</div>
+      <h3>GitHub</h3>
+      <p>View Repo</p>
+    </a>
+
+    <a href="https://www.linkedin.com/in/mohamedayman-9b193424a" target="_blank" class="contact-card">
+      <div class="contact-icon">💼</div>
+      <h3>LinkedIn</h3>
+      <p>View Profile</p>
+    </a>
+
+    <a href="mailto:mohamed.ayman2002k@gmail.com" class="contact-card">
+      <div class="contact-icon">✉️</div>
+      <h3>Email</h3>
+      <p>Send Me</p>
+    </a>
+
+    <a href="tel:+201095437925" class="contact-card">
+  <div class="contact-icon">📞</div> <!-- الأيقونة هنا -->
+  <h3>Phone</h3>
+  <p>Call Me</p>
+</a>
+
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<footer>
+  &copy;  Mohamed Ayman
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
