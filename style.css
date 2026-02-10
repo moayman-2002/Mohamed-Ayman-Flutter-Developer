@@ -1,0 +1,481 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+  background: #08005f;
+  color: #585af1;
+}
+
+/* Navigation Bar */
+nav {
+  background: #000000;
+  color: white;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff758c;
+}
+  
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* مسافة بين العناصر */
+  text-align: center;
+  background: linear-gradient(135deg, #0f0e0f, #2575fc);
+  color: white;
+}
+
+/* صورة شخصية */
+.profile-img {
+  width: 150px; /* حجم الصورة */
+  height: 150px;
+  border-radius: 50%; /* دائرة */
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 15px;
+}
+
+/* زرارين Header */
+.header-buttons {
+  display: flex;
+  justify-content: center; /* جعل الزرارين في الوسط */
+  gap: 20px; /* المسافة بين الزرارين */
+  margin-top: 20px;
+}
+
+.header-buttons button {
+  padding: 14px 30px; /* أكبر شوية من قبل */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: white;
+  color: #2575fc;
+  font-weight: 600;
+  font-size: 18px;
+  transition: transform 0.3s, background 0.3s, color 0.3s;
+}
+
+.header-buttons button:hover {
+  transform: scale(1.05);
+  background: #ff758c;
+  color: white;
+}
+
+/* Responsive للهواتف */
+@media screen and (max-width: 600px) {
+  .header-buttons {
+    flex-direction: column; /* الزرارين فوق بعض */
+    gap: 15px;
+  }
+  .header-buttons button {
+    width: 80%; /* ياخد مساحة جيدة على الشاشة الصغيرة */
+  }
+}
+
+
+
+
+header h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+header button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: white;
+  color: #2575fc;
+  font-weight: 600;
+  transition: transform 0.3s, background 0.3s;
+}
+
+header button:hover {
+  transform: scale(1.05);
+  background: #ff758c;
+  color: white;
+}
+#about {
+  padding: 80px 50px;
+  max-width: 800px;
+  margin: 0 auto; /* توسيط القسم */
+  text-align: justify; /* لتنسيق النص */
+}
+
+#about h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+#about p {
+  line-height: 1.8; /* المسافة بين الأسطر */
+  font-size: 18px;
+  color: #2575fc;
+}
+
+#education {
+  padding: 80px 50px;
+  max-width: 800px;
+  margin: 0 auto; /* توسيط القسم */
+  text-align: justify; /* لتنسيق النص */
+}
+
+#education h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #2575fc;
+}
+
+#education p {
+  line-height: 1.8; /* المسافة بين الأسطر */
+  font-size: 18px;
+  color: #2575fc; /* ممكن تسيبها لون أسود للنص */
+}
+
+#experiences {
+  padding: 80px 50px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#experiences h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #2575fc;
+}
+
+/* بطاقة الخبرة */
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  background: #f4f4f4;
+  padding: 20px 30px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* قسم المعلومات */
+.experience-info {
+  margin-bottom: 10px;
+}
+
+
+.experience-info h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.experience-info .role {
+  font-weight: 600;
+  color: #2575fc;
+  margin-bottom: 3px;
+}
+
+.experience-info .location {
+  font-style: italic;
+  color: #555;
+}
+
+/* التاريخ */
+.experience-date {
+  font-weight: 600;
+  color: #6a11cb;
+  margin-bottom: 10px;
+}
+
+/* قائمة المهارات والتجارب */
+.experience-details {
+  list-style: disc;
+  padding-left: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Responsive لتكون الخبرة صف عند الشاشات الكبيرة */
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.experience-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #f4f4f4;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  gap: 30px; /* مسافة بين العمودين */
+}
+
+/* عمود الاسم + المكان + التاريخ */
+.experience-info {
+  flex: 1;
+}
+
+.experience-info h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.experience-info .location {
+  font-style: italic;
+  color: #555;
+}
+
+.experience-info .experience-date {
+  font-weight: 600;
+  color: #6a11cb;
+  margin-top: 5px;
+}
+
+/* العمود الخاص بالتفاصيل */
+.experience-details {
+  flex: 2;
+  list-style: disc;
+  padding-left: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Responsive: على الشاشات الصغيرة الكارت يبقى عمودي */
+@media screen and (max-width: 767px) {
+  .experience-card {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+/* Projects Section */
+section {
+  padding: 80px 50px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+/* Project Images */
+.project-img {
+  width: 100%;       /* ياخد عرض الكارد بالكامل */
+  max-width: 1000px;  /* أقصى عرض ممكن */
+  height: 200px;     /* ارتفاع ثابت */
+  object-fit: cover; /* يملأ الصورة بدون تشويه */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 10px 0; /* مسافة بين النص وزر GitHub */
+}
+
+.project-tools span {
+  background: #2575fc; /* لون خلفية موحد */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;   /* يسمح بالانتقال للسطر التالي لو ضيق */
+  justify-content: center; /* ترتيبهم في الوسط */
+  gap: 10px; /* مسافة بين المهارات */
+  margin-top: 20px;
+}
+
+.skill {
+  background: #2575fc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  min-width: 150px; /* يضمن حجم مناسب لكل skill */
+}
+
+#key-service {
+  padding: 80px 50px;
+  text-align: center;
+  background: #08005f;
+}
+
+#key-service h2 {
+  font-size: 32px;
+  color: #2575fc;
+  margin-bottom: 50px;
+}
+
+/* Container for all services */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Individual service card */
+.service-card {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  max-width: 280px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Icon */
+.service-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+/* Service title */
+.service-card h3 {
+  font-size: 20px;
+  color: #6a11cb;
+  margin-bottom: 10px;
+}
+
+/* Service description */
+.service-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+
+/* Contact Section */
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  background: white;
+  width: 220px;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  text-decoration: none; /* يشيل الخط */
+  transition: transform 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+}
+
+.contact-card i {
+  font-size: 40px;
+  color: #2575fc;
+  margin-bottom: 15px;
+}
+
+.contact-card h3 {
+  font-size: 20px;
+  color: #6a11cb;
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  font-size: 14px;
+  color: #333;
+}
+
+.contact-icon {
+  font-size: 50px; /* حجم الأيقونة */
+  margin-bottom: 10px; /* مسافة تحتها */
+}
+.contact-icon.github {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: black; /* يخلي الإيموجي أسود */
+}
+
+
+
+
+
+section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
